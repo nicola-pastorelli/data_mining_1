@@ -1,6 +1,6 @@
-# Spotify Tracks
+# Exploration of Spotify tracks dataset - DM1
 
-The project analyses a **Spotify Tracks** dataset (15,000 tracks, 24 attributes, 20 music genres) with the full data mining pipeline:
+The project analyses a **Spotify tracks dataset** (15,000 tracks, 24 attributes, 20 music genres) with the full data mining pipeline:
 
 1. Data understanding & preparation
 2. Clustering
@@ -12,7 +12,7 @@ The project analyses a **Spotify Tracks** dataset (15,000 tracks, 24 attributes,
 
 ## Pipeline
 
-### 1. Data Understanding & Preparation
+### 1. Data understanding & preparation
 - Described every variable and checked data quality (missing values, redundant variables, correlations).
 - Filled missing `time_signature` values using `round(n_beats / n_bars)`.
 - Dropped uninformative or redundant columns: `mode`, `popularity_confidence`, `features_duration_ms`, `n_beats`, `n_bars`, `processing`.
@@ -53,7 +53,7 @@ Goal: predict track **popularity** (Linear, Ridge, Lasso, KNN, Decision Tree).
 
 Predictive power is low overall, since key information (e.g. play counts, release dates) is not in the dataset.
 
-### 5. Pattern Mining
+### 5. Pattern mining
 - Continuous variables discretised into *low / medium / high*.
 - Frequent itemsets extracted with **Apriori** and **FP-Growth**.
 - **830 association rules** found (support 10, confidence 50), mostly with confidence > 0.60 and lift > 1.8.
