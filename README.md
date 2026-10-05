@@ -23,7 +23,7 @@ Data scaled with **Min-Max** scaling.
 
 | Algorithm | Main setting | Silhouette |
 |---|---|---|
-| **K-Means** | k = 4 | 0.21 |
+| K-Means | k = 4 | 0.21 |
 | DBSCAN | eps = 0.67 | 0.35 |
 | Hierarchical | Ward + connectivity | 0.189 |
 
@@ -49,7 +49,7 @@ Goal: predict track **popularity** (Linear, Ridge, Lasso, KNN, Decision Tree).
 | Setting | Best model | R² |
 |---|---|---|
 | Univariate (`instrumentalness`) | KNN | 0.126 |
-| Multivariate (continuous features) | **Decision Tree** | **0.198** |
+| Multivariate (continuous features) | Decision Tree | 0.198 |
 
 Predictive power is low overall, since key information (e.g. play counts, release dates) is not in the dataset.
 
@@ -57,7 +57,7 @@ Predictive power is low overall, since key information (e.g. play counts, releas
 - Continuous variables discretised into *low / medium / high*.
 - Frequent itemsets extracted with **Apriori** and **FP-Growth**.
 - **830 association rules** found (support 10, confidence 50), mostly with confidence > 0.60 and lift > 1.8.
-- Rules for popularity: **low instrumentalness** is linked to high popularity, and vice versa.
+- Rules for popularity: low instrumentalness is linked to high popularity, and vice versa.
 - Using the rules to fill missing `popularity_confidence` values did **not** work (low support and confidence).
 
 ---
