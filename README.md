@@ -72,6 +72,6 @@ Predictive power is low overall, since key information (e.g. play counts, releas
 
 ## Authors
 
-Javier Alejandro Borges Legrottaglie
-Nicola Pastorelli
-Marco Sanna
+- Javier Alejandro Borges Legrottaglie
+- Nicola Pastorelli
+- Marco Sanna
